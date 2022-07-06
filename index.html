@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plan A - Tech Radar 2022.7</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="http://zalando.github.io/tech-radar/release/radar-0.6.js"></script>
+</head>
+<body>
+    <svg id="radar"></svg>
+    <script>
+        radar_visualization({
+            svg_id: "radar",
+            width: 1450,
+            height: 1000,
+            colors: {
+                background: "#fff",
+                grid: "#bbb",
+                inactive: "#ddd"
+            },
+            title: "Plan A - Tech Radar 2022.7",
+            quadrants: [
+                { name: "Languages" },
+                { name: "Infrastructure" },
+                { name: "Data Storage & Management" },
+                { name: "Tools" }
+            ],
+            rings: [
+                { name: "ADOPT",  color: "#66cb3d" },
+                { name: "TRIAL", color: "#5477b2" },
+                { name: "ASSESS",  color: "#f8c336" },
+                { name: "HOLD",  color: "#ff3220" }
+            ],
+            print_layout: true,
+            entries: [
+                //
+                // ADOPT
+                //
+                {
+                    label: "PHP 8",
+                    quadrant: 0,          // 0,1,2,3 (counting clockwise, starting from bottom right)
+                    ring: 0,              // 0,1,2,3 (starting from inside)
+                    moved: 1              // -1 = moved out (triangle pointing down)
+                                          //  0 = not moved (circle)
+                                          //  1 = moved in  (triangle pointing up)
+                },
+                {
+                    label: "MySQL",
+                    quadrant: 2,
+                    ring: 0,
+                    moved: 0
+                },
+                {
+                    label: "Docker",
+                    quadrant: 1,
+                    ring: 0,
+                    moved: 0
+                },
+                {
+                    label: "Laravel",
+                    quadrant: 0,
+                    ring: 0,
+                    moved: 0
+                },
+                {
+                    label: "ReactJS",
+                    quadrant: 0,
+                    ring: 0,
+                    moved: 0
+                },
+                {
+                    label: "MaterialUI",
+                    quadrant: 3,
+                    ring: 0,
+                    moved: 0
+                },
+                {
+                    label: "Javascript",
+                    quadrant: 0,
+                    ring: 0,
+                    moved: 0
+                },
+                {
+                    label: "Typescript",
+                    quadrant: 0,
+                    ring: 0,
+                    moved: 0
+                },
+                {
+                    label: "Python",
+                    quadrant: 0,
+                    ring: 0,
+                    moved: 0
+                },
+                {
+                    label: "AWS ...",
+                    quadrant: 1,
+                    ring: 0,
+                    moved: 0
+                },
+                {
+                    label: "AWS Lambda",
+                    quadrant: 1,
+                    ring: 0,
+                    moved: 0
+                },
+                {
+                    label: "Terraform",
+                    quadrant: 1,
+                    ring: 0,
+                    moved: 0
+                },
+                {
+                    label: "Terragrunt",
+                    quadrant: 1,
+                    ring: 0,
+                    moved: 0
+                },
+                {
+                    label: "Bugsnag",
+                    quadrant: 2,
+                    ring: 0,
+                    moved: 0
+                },
+                {
+                    label: "Customer.io",
+                    quadrant: 3,
+                    ring: 0,
+                    moved: 0
+                },
+                {
+                    label: "VS Code",
+                    quadrant: 3,
+                    ring: 0,
+                    moved: 0
+                },
+                {
+                    label: "PHPStorm",
+                    quadrant: 3,
+                    ring: 0,
+                    moved: 0
+                },
+                {
+                    label: "WebStorm",
+                    quadrant: 3,
+                    ring: 0,
+                    moved: 0
+                },
+                {
+                    label: "Bitbucket",
+                    quadrant: 3,
+                    ring: 0,
+                    moved: 0
+                },
+                //
+                // TRIAL
+                //
+                {
+                    label: "New Relic",
+                    quadrant: 3,
+                    ring: 1,
+                    moved: 1
+                },
+                {
+                    label: "Storybook",
+                    quadrant: 3,
+                    ring: 1,
+                    moved: 0
+                },
+                {
+                    label: "Mock Service Worker",
+                    quadrant: 3,
+                    ring: 1,
+                    moved: 0
+                },
+                {
+                    label: "React Toolkit",
+                    quadrant: 3,
+                    ring: 1,
+                    moved: 0
+                },
+                {
+                    label: "Styled Components",
+                    quadrant: 1,
+                    ring: 1,
+                    moved: 0
+                },
+                {
+                    label: "Sentry",
+                    quadrant: 2,
+                    ring: 1,
+                    moved: 0
+                },
+                {
+                    label: "GitHub",
+                    quadrant: 3,
+                    ring: 1,
+                    moved: 0
+                },
+                //
+                // ASSESS
+                //
+                {
+                    label: "Kibana",
+                    quadrant: 2,
+                    ring: 2,
+                    moved: 0
+                },
+                {
+                    label: "SvelteJS",
+                    quadrant: 0,
+                    ring: 2,
+                    moved: 0
+                },
+                {
+                    label: "TailwindCSS",
+                    quadrant: 0,
+                    ring: 2,
+                    moved: 0
+                },
+                //
+                // HOLD
+                //
+                {
+                    label: "PHP 7",
+                    quadrant: 0,
+                    ring: 3,
+                    moved: -1
+                },
+
+
+            ]
+        });
+    </script>
+</body>
+</html>
