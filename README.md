@@ -10,4 +10,6 @@ The radar is published on a [GitHub page](https://plana-earth.github.io/tech-rad
 
 Open `docs/index.html` and check the comments for `entries` in the radar configuration JSON.
 
-To publish the new version, please just push your changes to the `main` branch. GitHub pages expects the `docs/index.html` to exist.
+To publish the new version, please create a PR. Once merged, the pages will automatically be updated.
+
+Note: GitHub pages expects the `docs/index.html` to exist.
