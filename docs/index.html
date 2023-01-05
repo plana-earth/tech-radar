@@ -37,7 +37,7 @@
                 // ADOPT (ring 0)
                 //
                 {
-                    label: "PHP 8",
+                    label: "PHP 8.1",
                     quadrant: 0,          // 0,1,2,3 (counting clockwise, starting from bottom right)
                     ring: 0,              // 0,1,2,3 (starting from inside)
                     moved: 1              // -1 = moved out (triangle pointing down)
@@ -93,7 +93,13 @@
                     moved: 0
                 },
                 {
-                    label: "AWS ...",
+                    label: "AWS S3",
+                    quadrant: 1,
+                    ring: 0,
+                    moved: 0
+                },
+                {
+                    label: "AWS ECS",
                     quadrant: 1,
                     ring: 0,
                     moved: 0
@@ -164,15 +170,27 @@
                     ring: 0,
                     moved: 0
                 },
-                //
-                // TRIAL (ring 1)
-                //
+                {
+                    label: "Mailgun",
+                    quadrant: 3,
+                    ring: 0,
+                    moved: 1
+                },
                 {
                     label: "New Relic",
                     quadrant: 3,
-                    ring: 1,
+                    ring: 0,
                     moved: 1
                 },
+                {
+                    label: "Nordlayer VPN",
+                    quadrant: 3,
+                    ring: 0,
+                    moved: 0
+                },
+                //
+                // TRIAL (ring 1)
+                //
                 {
                     label: "Storybook",
                     quadrant: 3,
@@ -208,6 +226,24 @@
                     quadrant: 3,
                     ring: 1,
                     moved: 0
+                },
+                {
+                    label: "AWS Gateway",
+                    quadrant: 1,
+                    ring: 1,
+                    moved: 1
+                },
+                {
+                    label: "AWS Gateway",
+                    quadrant: 1,
+                    ring: 1,
+                    moved: 1
+                },
+                {
+                    label: "OpenAPI/Swagger",
+                    quadrant: 3,
+                    ring: 1,
+                    moved: 1
                 },
                 //
                 // ASSESS (ring 2)
