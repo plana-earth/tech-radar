@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Plan A - Tech Radar 2023.6</title>
+    <title>Plan A - Tech Radar 2024.2</title>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://zalando.github.io/tech-radar/release/radar-0.6.js"></script>
 </head>
@@ -18,7 +18,7 @@
                 grid: "#bbb",
                 inactive: "#ddd"
             },
-            title: "Plan A - Tech Radar 2023.6",
+            title: "Plan A - Tech Radar 2024.2",
             quadrants: [
                 { name: "Languages" },
                 { name: "Infrastructure" },
@@ -59,12 +59,6 @@
                 {
                     label: "Laravel",
                     quadrant: 0, // Languages
-                    ring: 0,
-                    moved: 0
-                },
-                {
-                    label: "MaterialUI",
-                    quadrant: 3, // Tools
                     ring: 0,
                     moved: 0
                 },
@@ -206,21 +200,57 @@
                     ring: 0,
                     moved: 0
                 },
-                 {
+                {
                     label: "OpenAPI/Swagger",
                     quadrant: 3,
                     ring: 0,
                     moved: 1
                 },
+                {
+                    label: "Single-Spa",
+                    quadrant: 3,
+                    ring: 0,
+                    moved: 1
+                },
+                {
+                    label: "ViteJS",
+                    quadrant: 3,
+                    ring: 0,
+                    moved: 1
+                },
+                {
+                    label: "SCSS",
+                    quadrant: 0,
+                    ring: 0,
+                    moved: 1
+                },
+                {
+                    label: "i18next",
+                    quadrant: 3,
+                    ring: 0,
+                    moved: 1
+                },
+                {
+                    label: "Webpack",
+                    quadrant: 3,
+                    ring: 0,
+                    moved: 1
+                },
+                {
+                    label: "Jest",
+                    quadrant: 3,
+                    ring: 0,
+                    moved: 1
+                },
+                {
+                    label: "HTML",
+                    quadrant: 0,
+                    ring: 0,
+                    moved: 0
+                },
                 //
                 // TRIAL (ring 1)
                 //
-                {
-                    label: "Storybook",
-                    quadrant: 3,
-                    ring: 1,
-                    moved: 0
-                },
                 {
                     label: "Stoplight",
                     quadrant: 3,
@@ -229,12 +259,6 @@
                 },
                 {
                     label: "Mock Service Worker",
-                    quadrant: 3,
-                    ring: 1,
-                    moved: 0
-                },
-                {
-                    label: "React Toolkit",
                     quadrant: 3,
                     ring: 1,
                     moved: 0
@@ -263,6 +287,12 @@
                     ring: 1,
                     moved: 0
                 },
+                {
+                    label: "Cypress",
+                    quadrant: 3,
+                    ring: 1,
+                    moved: 1
+                },
                 //
                 // ASSESS (ring 2)
                 //
@@ -273,16 +303,22 @@
                     moved: 0
                 },
                 {
-                    label: "SvelteJS",
-                    quadrant: 0,
+                    label: "Storybook",
+                    quadrant: 3,
                     ring: 2,
-                    moved: 0
+                    moved: -1
                 },
                 {
-                    label: "TailwindCSS",
-                    quadrant: 0,
+                    label: "Retool",
+                    quadrant: 3,
                     ring: 2,
-                    moved: 0
+                    moved: 1
+                },
+                {
+                    label: "SonarCloud/SonarQube",
+                    quadrant: 1,
+                    ring: 2,
+                    moved: 1
                 },
                 //
                 // HOLD (ring 3)
@@ -293,8 +329,18 @@
                     ring: 3,
                     moved: -1
                 },
-
-
+                {
+                    label: "MaterialUI",
+                    quadrant: 3,
+                    ring: 3,
+                    moved: -1
+                },
+                {
+                    label: "AWS Amplify",
+                    quadrant: 1,
+                    ring: 3,
+                    moved: -1
+                }
             ]
         });
     </script>
